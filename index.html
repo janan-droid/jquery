@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Tarefa</title>
-
+   
      <!--Import Google Icon Font-->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
      <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+     <title>App Tarefa</title>
+
 </head>
 <body>
     
@@ -20,14 +22,22 @@
 
         <ul class="center">
             <li>
-                <i class="small material-icons">event_note</i>
+                <i class="Small material-icons">event_note</i>
                 tarefa importante!
             </li>
-            <li>não esquecça!!!</li>
+            <li>não esqueça!!!</li>
         </ul>
 
         <p>Titulo: </p> <input type="text" class="campoTitulo" />
         <p>Observações: </p> <input type="text" class="campoObs" />
+
+        <select class="campoPrioridade browser-default">
+            <option value="">Selecione a prioridade</option>
+            <option value="Alto">Alto</option>
+            <option value="Médio">Médio</option>
+            <option value="Baixo">Baixo</option>
+        </select>
+
     <div class="divBotao">
         <a id="botao" class="btn-floating btn-large waves-effect waves-light red">
             <i class="material-icons">arrow_downward</i>
@@ -40,15 +50,20 @@
                 <tr>
                     <th>tarefa</th>
                     <th>observações</th>
+                    <th>prioridade</th>
                     <th>apagar</th>
                 </tr>
             </thead>
+             <tbody>
+                
+        </tbody>
         </table>
     </section>
     </div>
 
-    <script src="js/main.js"></script>
     <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/main.js"></script>
+    
     
     </div>
 </body>
